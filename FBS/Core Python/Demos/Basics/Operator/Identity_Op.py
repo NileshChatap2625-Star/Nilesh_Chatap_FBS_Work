@@ -6,9 +6,10 @@ lis1 = [10, 20]
 lis2 = [10, 20]
 
 #1. is   
-
+z
 print(x is y)
 print(lis1 is lis2)
+
 print(id(x))
 print(id(y))
 print(id(lis1))
@@ -25,6 +26,7 @@ print(id(lis2))
 
 print(x is not y)
 print(lis1 is not lis2)
+
 print(id(x))
 print(id(y))
 print(id(lis1))

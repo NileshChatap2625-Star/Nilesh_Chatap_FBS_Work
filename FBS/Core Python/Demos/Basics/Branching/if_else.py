@@ -1,10 +1,16 @@
-#num = int(input("Enter number:"))
+### number is even or odd
 
-#if(num % 2 == 0):
-  #  print(f'{num} is an even number.')  #### if condition is exicute if is True.
-#else:
- #   print(f'{num} is an odd number.')    ### The else condition is exicute only that time the above condition of else is flase.
 
+num = int(input("Enter number:"))
+
+if(num % 2 == 0):
+    print(f'{num} is an even number.')  #### if condition is exicute if is True.
+else:
+    print(f'{num} is an odd number.')    ### The else condition is exicute only that time the above condition of else is flase.
+
+
+
+#### Number is positive or negative
 
 
 num = int(input('Enter number:'))

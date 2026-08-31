@@ -1,13 +1,15 @@
-Gender = input("Enter Gender (M/F) :")
-age = int(input("Enter age :"))
+gender = input("Enter gender (M/F):")
+age = int(input("Enter age:"))
 
-if(Gender== "F"):
-    if(age>=18):
-      print("Girl is eligible")
+
+if(gender == "F"):
+    if(age >= 18):
+        print("Girl is eligible for marriage.")
     else:
-       print("girl is not eligible")
+        print("Pahle padhai kar lo.")
 else:
-   if(age>=21):
-      print("boy is eligible")
-   else:
-      print("boy is not eligible")          
+    if(age >= 21):
+        print("Boy is eligible for marriage.")
+    else:
+        print("Pahle kama le.")
+        
