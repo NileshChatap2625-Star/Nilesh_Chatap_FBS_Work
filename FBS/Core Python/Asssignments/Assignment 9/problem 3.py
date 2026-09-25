@@ -1,12 +1,10 @@
-def revers(num):
-    r = 0
+def reverse(n, rev=0):
+    if n == 0:
+        return rev
+    else:
+        return reverse(n // 10, rev * 10 + n % 10)
 
-    while(num > 0):
-        d = num % 10
-        r = r * 10 + d
-        num = num // 10
-    return r
+n = int(input("enter number:"))
 
-num = int(input("Enter a number:"))
-res = revers(num)
-print("revers number=", res)
+result = reverse(n)
+print("Reverse :", result)

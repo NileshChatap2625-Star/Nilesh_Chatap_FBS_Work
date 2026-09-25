@@ -1,16 +1,24 @@
-def armstrong(num):
-    sum = 0
-    temp = num
-    while(temp > 0):
-        d = temp % 10
-        sum = sum + d ** 3
+def digit_count(n):
+    temp = n
+    count = 0
+    while temp > 0:
+        count += 1
         temp = temp // 10
+    return count
 
-    if(num == sum):
-        print(f"{num} is armstrong number")
+def armstrong_sum(n, count):
+    if n == 0:
+        return 0
     else:
-        print(f"{num} is not armstrong number")
+        d = n % 10
+        return (d ** count) + armstrong_sum(n // 10, count)
 
-num = int(input("Enter a number:"))
-res = armstrong(num)
-print(res)
+
+n = int(input("enter number:"))
+count = digit_count(n)
+result = armstrong_sum(n, count)
+
+if result == n:
+    print(f'{n} is an armstrong number.')
+else:
+    print(f'{n} is not an armstrong number.')

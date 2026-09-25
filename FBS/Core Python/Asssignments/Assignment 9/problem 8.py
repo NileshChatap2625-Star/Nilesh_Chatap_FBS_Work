@@ -1,14 +1,15 @@
-def prime(num):
-    if num > 1:
-        for i in range(2, num):
-            if (num % i) == 0:
-                print(num, "is not a prime number")
-                break
-        else:
-            print(num, "is a prime number")
-    else:
-        print(num, "is not a prime number")
+def prime(n, i):
+    if n <= 1:
+        return False
+    if i * i > n:
+        return True
+    if n % i == 0:
+        return False
+    return prime(n, i + 1)
 
-num = int(input("Enter a number:"))
-res = prime(num)
-print(res)
+n = int(input("enteer a number:"))
+
+if prime(n, 2):
+    print(n, " is a prime number")
+else:
+    print(n, "is not a  prime number")

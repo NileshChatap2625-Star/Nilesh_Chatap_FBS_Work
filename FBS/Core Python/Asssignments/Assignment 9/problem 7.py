@@ -1,11 +1,9 @@
-def sum_digits(num):
-    sum = 0
-    while(num > 0):
-        d = num % 10
-        sum = sum + d
-        num = num // 10
-    print("sum of digits=", sum)
+def sum_digits(n):
+    if n == 0:
+        return 0
+    else:
+        return (n % 10) + sum_digits(n // 10)
 
-num = int(input("Enter a number:"))
-res = sum_digits(num)
-print(res)
+n = int(input("enter a number:"))
+res = sum_digits(n)
+print("sum of digits=", res)

@@ -1,10 +1,11 @@
 def sum(num):
-    sum = 0 
+    if num == 0:
+        return 0
+    else:
+        return num + sum(num - 1)
 
-    for i in range(1, num + 1):
-        sum += i
-    print("sum of numbers=", sum)
 
-num = int(input("Enter a number:"))
+num = int(input("enter a number:"))
+
 res = sum(num)
-print(res)
+print("sum of numbers=", res)

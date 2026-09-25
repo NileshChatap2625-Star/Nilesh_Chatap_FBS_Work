@@ -1,10 +1,10 @@
-def fact(num):
-    fact = 1
+def fact(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fact(n - 1)
 
-    for i in range(1, num + 1):
-        fact = fact * i
-    print("Factorial of number =", fact)
+n = int(input("enter a number:"))
 
-num = int(input("Enter a number:"))
-res = fact(num)
-print(res)
+res = fact(n)
+print("Factorial =", res)
