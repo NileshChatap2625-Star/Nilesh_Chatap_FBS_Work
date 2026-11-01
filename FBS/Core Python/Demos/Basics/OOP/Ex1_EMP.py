@@ -1,5 +1,5 @@
 from abc import ABC,abstractmethod
-class Employee:
+class Employee(ABC):
     def __init__(self,id1,name1,sal1):
         self.id = id1
         self.name = name1
